@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center py-5">
+    <h1 class="display-4 fw-bold mb-3">CR3 相同照片檢查系統</h1>
+    <p class="lead text-muted mb-5">專為攝影師設計的邊緣運算解決方案。<br>快速篩選大量 RAW 檔，節省您的時間與硬碟空間。</p>
+    
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-8">
+            <div class="card card-custom p-5 text-center">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <div class="mb-3 text-primary"><i class="fas fa-download fa-4x"></i></div>
+                    <h3 class="fw-bold mb-2">下載 Desktop App (.exe)</h3>
+                    <p class="mb-4 text-muted">v1.0.2 | Windows 10/11 | 專為 CR3 優化</p>
+                    {% if current_user.is_authenticated %}
+                        <a href="{{ url_for('download_app') }}" class="btn btn-primary rounded-pill px-5 btn-lg">立即下載</a>
+                    {% else %}
+                        <a href="{{ url_for('login') }}" class="btn btn-secondary rounded-pill px-5 btn-lg">登入後下載</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <h3 class="fw-bold mb-4 text-start"><i class="fas fa-presentation me-2"></i>系統功能介紹 (簡報)</h3>
+            <div class="presentation-container">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                    src="https://www.canva.com/design/DAG95dzxg_Y/tO4aTyMdoTYQGrVpDq81DA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
+            </div>
+            <p class="text-muted mt-3 small">
+                <a href="https://www.canva.com/design/DAG95dzxg_Y/tO4aTyMdoTYQGrVpDq81DA/view?utm_content=DAG95dzxg_Y&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">CR3 Smart Checker Presentation</a> by 111534105 田心于
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

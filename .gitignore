@@ -1,0 +1,23 @@
+# Python 暫存
+__pycache__/
+*.py[cod]
+
+# 資料庫 (隱私)
+instance/
+*.db
+*.sqlite3
+
+# 上傳的圖片 (節省空間)
+server/static/uploads/*
+server/static/avatars/*
+!server/static/avatars/default.png
+
+# 打包產物 (太大了，GitHub 不收)
+dist/
+build/
+*.spec
+
+# 虛擬環境
+venv/
+env/
+.env

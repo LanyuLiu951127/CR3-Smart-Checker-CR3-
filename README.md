@@ -1,8 +1,10 @@
-﻿# 專案名稱：CR3 Smart Checker (CR3 智慧相片快篩系統)
+﻿# 專案名稱：CR3 Smart Checker (CR3 相同照片檢查系統)
 
 簡報：
 https://www.canva.com/design/DAG95dzxg_Y/SoLf43PXz1fdmaQHo4ye-Q/edit?utm_content=DAG95dzxg_Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
+web：
+https://lanyu.pythonanywhere.com/
 
 1. 專案簡介 (Project Overview) 這是一個專為攝影師設計的 雙平台 (Web + Desktop) 相片篩選解決方案。旨在解決 RAW 檔 (CR3) 體積龐大、難以快速比對重複內容的痛點。系統採用「邊緣運算」概念，讓使用者選擇最適合的操作模式：輕量級的網頁版或高效能的桌面版。
 
@@ -35,4 +37,5 @@ Frontend: HTML5, CSS3 (Bootstrap 5), JavaScript
 Desktop: Python Tkinter, PyInstaller
 
 Security: Werkzeug Security, MD5 Hashing
+
 
